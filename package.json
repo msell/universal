@@ -3,7 +3,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "next dev",
+    "web": "cross-env NODE_PATH=src/ next dev",
     "eject": "expo eject",
     "build": "next build"
   },
@@ -23,6 +23,7 @@
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
     "babel-preset-expo": "~8.0.0",
+    "cross-env": "^6.0.3",
     "typescript": "~3.6.3"
   },
   "private": true
