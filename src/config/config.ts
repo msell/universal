@@ -22,6 +22,7 @@ const ENV = {
   }
 };
 
+// https://docs.expo.io/versions/latest/distribution/release-channels/#using-release-channels-for-environment-variable-configuration
 export const getEnvVars = (env = Constants.manifest.releaseChannel) => {
   // What is __DEV__ ?
   // This variable is set to true when react-native is running in Dev mode.
