@@ -5,7 +5,8 @@
     "ios": "expo start --ios",
     "web": "cross-env NODE_PATH=src/ next dev",
     "eject": "expo eject",
-    "build:web": "cross-env NODE_PATH=src/ next build"
+    "build:web": "cross-env NODE_PATH=src/ next build",
+    "dev": "npx concurrently \"yarn web\" \"yarn start -i -a\""
   },
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
